@@ -1,0 +1,30 @@
+<svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_5721_226519)">
+<g filter="url(#filter0_dd_5721_226519)">
+<path d="M0.0925293 2L2.09253 0H11.0925H20.0925L22.0925 2V11V20L20.0925 22H11.0925H2.09253L0.0925293 20V11V2Z" fill="white"/>
+<path d="M21.8425 11V19.8964L19.989 21.75H11.0925H2.19608L0.342529 19.8964V11V2.10355L2.19608 0.25H11.0925H19.989L21.8425 2.10355V11Z" stroke="#D0D5DD" stroke-width="0.5"/>
+</g>
+<rect x="4.71777" y="4.62451" width="12.7466" height="12.7466" rx="1.41629" stroke="#6A0067" stroke-width="1.41629" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<filter id="filter0_dd_5721_226519" x="-5.90747" y="-2" width="34" height="34" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="2" operator="erode" in="SourceAlpha" result="effect1_dropShadow_5721_226519"/>
+<feOffset dy="2"/>
+<feGaussianBlur stdDeviation="2"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.0627451 0 0 0 0 0.0941176 0 0 0 0 0.156863 0 0 0 0.06 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_5721_226519"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="2" operator="erode" in="SourceAlpha" result="effect2_dropShadow_5721_226519"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="4"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.0627451 0 0 0 0 0.0941176 0 0 0 0 0.156863 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="effect1_dropShadow_5721_226519" result="effect2_dropShadow_5721_226519"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_5721_226519" result="shape"/>
+</filter>
+<clipPath id="clip0_5721_226519">
+<rect width="22" height="22" fill="white" transform="translate(0.0927734)"/>
+</clipPath>
+</defs>
+</svg>

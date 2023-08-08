@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="dist/app.css">
+    <title>Mobius | Timeline </title>
+</head>
+<body class="body-bg-img bg-c-img" style="background-image: url('src/images/bgbodyimg.png')">
+
+<div class="top-bar px-3 px-md-4 px-lg-5 bg-white h-155 mb-2 mb-md-0">
+    <div class="row">
+        <div class="col-5 col-md-4 col-lg-3 ps-4 align-self-center order-1 ">
+            <h3 class="fw-700 mb-0 r-font"><a href="index.html" class="text-dark text-decoration-none"><img
+                    src="./src/images/icons/back-arrow.svg" width="30" class="me-2" alt=""> BACK</a></h3>
+        </div>
+        <div class="col-md-4 col-lg-6 order-3 order-md-2">
+            <div class="shadow rounded d-flex align-items-center justify-content-center"
+                 style="background: url(src/images/cards/header-bg-1.svg) left center no-repeat , url(src/images/cards/header-bg-2.svg) right center no-repeat, rgba(255, 255, 255, 0.9);
+                            height: 100px;
+"
+            >
+                <h2 class="black-font text-uppercase">Timeline</h2>
+            </div>
+
+        </div>
+        <div class="col-7 col-md-4 col-lg-3 order-2 order-md-3 align-self-center">
+            <div style="height: 100px;" class="d-flex align-items-center justify-content-center">
+                <a href="./user-profile.html" class="text-decoration-none text-dark">
+                    <img src="./src/images/icons/pc-dummy-icon.svg" class="me-2" width="50" alt="">
+                    Danny Dungeon
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="px-3 px-md-4 px-lg-5 pb-3">
+    <div style="background: rgba(255, 255, 255, 0.30); backdrop-filter: blur(12px);">
+        <div class="mb-4">
+            <a href="#!"
+               data-bs-toggle="modal" data-bs-target="#addEventModal"
+               class="btn btn-primary px-5">Add Event</a>
+        </div>
+
+        <div class="card border-0 shadow mb-40 py-4"
+             style="background: rgba(255, 255, 255, 0.40); backdrop-filter: blur(12px);"
+        >
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h4 class="fw-bolder fw-700 r-font mb-0 text-uppercase">Timeline</h4>
+                </div>
+                <div class="ps-2 position-relative">
+                    <ul class="list-group list-group-flush border-start border-2 border-primary">
+                        <li class="list-group-item mb-2 border-0">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0 position-absolute start-0 timeline-card-img" style="top: 43px !important;">
+                                    <img src="./src/images/icons/unchecked-icon.svg" width="30" alt="">
+                                </div>
+                                <div class="ms-4 w-100 px-3">
+                                    <div class="row p-1 p-md-3 rounded rounded-3 timeline-card" style="background: rgba(255, 255, 255, 0.4);">
+                                        <div class="col-md-6 col-lg-8 border-bottom pb-2 border-bottom-2 mb-3 mb-md-0">
+                                            <div class="">
+                                                <p class="mb-1 text-dark fw-600 fw-bold-on-hover">Event Details Lorem ipsum dolor sit amet Event Details Lorem ipsum dolor sit amet</p>
+                                                <p class="mb-0 fs-14 text-gray-500  text-gray-400 font-change-color-on-hover">
+                                                    <img src="src/images/icons/cloudy-night-icon.svg" class="me-1" width="15"
+                                                         alt="">
+                                                    Day 12 (Night)
+                                                    <img src="src/images/icons/location-icon.svg" class="me-1" width="20"
+                                                         alt="">
+                                                    Florida,USA
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 align-self-md-end">
+                                            <div class="d-flex justify-content-md-end pb-2 pb-md-0">
+                                                <a href="#!" class="text-decoration-none me-1 me-md-2 me-lg-3"><img class="shadow"
+                                                        src="src/images/icons/edit-icon.svg" width="25" alt=""></a>
+                                                <a href="#!" class="text-decoration-none me-1 me-md-2 me-lg-3">
+                                                    <img class="shadow" src="src/images/icons/upload-icon.svg" width="25" alt=""></a>
+                                                <a href="#!" class="text-decoration-none me-1 me-md-2 me-lg-3">
+                                                    <img class="shadow" src="src/images/icons/save-icon.svg" width="25" alt=""></a>
+
+                                                <a href="#!" class="text-decoration-none me-1 me-md-2 me-lg-3">
+                                                    <img class="shadow" src="src/images/icons/trash-icon.svg" width="25" alt=""></a>
+
+                                                <a href="#!" class="text-decoration-none me-1 me-md-2 me-lg-3"
+                                                   data-bs-toggle="modal" data-bs-target="#exportModal"
+                                                ><img class="shadow" src="src/images/icons/export-icon.svg" width="25" alt=""></a>
+
+
+                                                <a href="#!" class="text-decoration-none me-1 me-md-2 me-lg-3"><img class="shadow"
+                                                        src="src/images/icons/duplicate-icon.svg" width="25" alt=""></a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item mb-2 border-0">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0 position-absolute start-0 timeline-card-img" style="top: 43px !important;">
+                                    <img src="./src/images/icons/unchecked-icon.svg" width="30" alt="">
+                                </div>
+                                <div class="ms-4 w-100 px-3">
+                                    <div class="row p-1 p-md-3 rounded rounded-3 timeline-card" style="background: rgba(255, 255, 255, 0.4);">
+                                        <div class="col-md-6 col-lg-8 border-bottom pb-2 border-bottom-2 mb-3 mb-md-0">
+                                            <div class="">
+                                                <p class="mb-1 text-dark fw-600 fw-bold-on-hover">Event Details Lorem ipsum dolor sit amet Event Details Lorem ipsum dolor sit amet</p>
+                                                <p class="mb-0 fs-14 text-gray-500  text-gray-400 font-change-color-on-hover">
+                                                    <img src="src/images/icons/cloudy-night-icon.svg" class="me-1" width="15"
+                                                         alt="">
+                                                    Day 12 (Night)
+                                                    <img src="src/images/icons/location-icon.svg" class="me-1" width="20"
+                                                         alt="">
+                                                    Florida,USA
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 align-self-md-end">
+                                            <div class="d-flex justify-content-md-end pb-2 pb-md-0">
+                                                <a href="#!" class="text-decoration-none me-1 me-md-2 me-lg-3"><img class="shadow"
+                                                                                                                    src="src/images/icons/edit-icon.svg" width="25" alt=""></a>
+                                                <a href="#!" class="text-decoration-none me-1 me-md-2 me-lg-3">
+                                                    <img class="shadow" src="src/images/icons/upload-icon.svg" width="25" alt=""></a>
+                                                <a href="#!" class="text-decoration-none me-1 me-md-2 me-lg-3">
+                                                    <img class="shadow" src="src/images/icons/save-icon.svg" width="25" alt=""></a>
+
+                                                <a href="#!" class="text-decoration-none me-1 me-md-2 me-lg-3">
+                                                    <img class="shadow" src="src/images/icons/trash-icon.svg" width="25" alt=""></a>
+
+                                                <a href="#!" class="text-decoration-none me-1 me-md-2 me-lg-3"
+                                                   data-bs-toggle="modal" data-bs-target="#exportModal"
+                                                ><img class="shadow" src="src/images/icons/export-icon.svg" width="25" alt=""></a>
+
+
+                                                <a href="#!" class="text-decoration-none me-1 me-md-2 me-lg-3"><img class="shadow"
+                                                                                                                    src="src/images/icons/duplicate-icon.svg" width="25" alt=""></a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item mb-2 border-0">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0 position-absolute start-0 timeline-card-img" style="top: 43px !important;">
+                                    <img src="./src/images/icons/unchecked-icon.svg" width="30" alt="">
+                                </div>
+                                <div class="ms-4 w-100 px-3">
+                                    <div class="row p-1 p-md-3 rounded rounded-3 timeline-card" style="background: rgba(255, 255, 255, 0.4);">
+                                        <div class="col-md-6 col-lg-8 border-bottom pb-2 border-bottom-2 mb-3 mb-md-0">
+                                            <div class="">
+                                                <p class="mb-1 text-dark fw-600 fw-bold-on-hover">Event Details Lorem ipsum dolor sit amet Event Details Lorem ipsum dolor sit amet</p>
+                                                <p class="mb-0 fs-14 text-gray-500  text-gray-400 font-change-color-on-hover">
+                                                    <img src="src/images/icons/cloudy-night-icon.svg" class="me-1" width="15"
+                                                         alt="">
+                                                    Day 12 (Night)
+                                                    <img src="src/images/icons/location-icon.svg" class="me-1" width="20"
+                                                         alt="">
+                                                    Florida,USA
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 align-self-md-end">
+                                            <div class="d-flex justify-content-md-end pb-2 pb-md-0">
+                                                <a href="#!" class="text-decoration-none me-1 me-md-2 me-lg-3"><img class="shadow"
+                                                                                                                    src="src/images/icons/edit-icon.svg" width="25" alt=""></a>
+                                                <a href="#!" class="text-decoration-none me-1 me-md-2 me-lg-3">
+                                                    <img class="shadow" src="src/images/icons/upload-icon.svg" width="25" alt=""></a>
+                                                <a href="#!" class="text-decoration-none me-1 me-md-2 me-lg-3">
+                                                    <img class="shadow" src="src/images/icons/save-icon.svg" width="25" alt=""></a>
+
+                                                <a href="#!" class="text-decoration-none me-1 me-md-2 me-lg-3">
+                                                    <img class="shadow" src="src/images/icons/trash-icon.svg" width="25" alt=""></a>
+
+                                                <a href="#!" class="text-decoration-none me-1 me-md-2 me-lg-3"
+                                                   data-bs-toggle="modal" data-bs-target="#exportModal"
+                                                ><img class="shadow" src="src/images/icons/export-icon.svg" width="25" alt=""></a>
+
+
+                                                <a href="#!" class="text-decoration-none me-1 me-md-2 me-lg-3"><img class="shadow"
+                                                                                                                    src="src/images/icons/duplicate-icon.svg" width="25" alt=""></a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item mb-2 border-0">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0 position-absolute start-0 timeline-card-img" style="top: 43px !important;">
+                                    <img src="./src/images/icons/unchecked-icon.svg" width="30" alt="">
+                                </div>
+                                <div class="ms-4 w-100 px-3">
+                                    <div class="row p-1 p-md-3 rounded rounded-3 timeline-card" style="background: rgba(255, 255, 255, 0.4);">
+                                        <div class="col-md-6 col-lg-8 border-bottom pb-2 border-bottom-2 mb-3 mb-md-0">
+                                            <div class="">
+                                                <p class="mb-1 text-dark fw-600 fw-bold-on-hover">Event Details Lorem ipsum dolor sit amet Event Details Lorem ipsum dolor sit amet</p>
+                                                <p class="mb-0 fs-14 text-gray-500  text-gray-400 font-change-color-on-hover">
+                                                    <img src="src/images/icons/cloudy-night-icon.svg" class="me-1" width="15"
+                                                         alt="">
+                                                    Day 12 (Night)
+                                                    <img src="src/images/icons/location-icon.svg" class="me-1" width="20"
+                                                         alt="">
+                                                    Florida,USA
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 align-self-md-end">
+                                            <div class="d-flex justify-content-md-end pb-2 pb-md-0">
+                                                <a href="#!" class="text-decoration-none me-1 me-md-2 me-lg-3"><img class="shadow"
+                                                                                                                    src="src/images/icons/edit-icon.svg" width="25" alt=""></a>
+                                                <a href="#!" class="text-decoration-none me-1 me-md-2 me-lg-3">
+                                                    <img class="shadow" src="src/images/icons/upload-icon.svg" width="25" alt=""></a>
+                                                <a href="#!" class="text-decoration-none me-1 me-md-2 me-lg-3">
+                                                    <img class="shadow" src="src/images/icons/save-icon.svg" width="25" alt=""></a>
+
+                                                <a href="#!" class="text-decoration-none me-1 me-md-2 me-lg-3">
+                                                    <img class="shadow" src="src/images/icons/trash-icon.svg" width="25" alt=""></a>
+
+                                                <a href="#!" class="text-decoration-none me-1 me-md-2 me-lg-3"
+                                                   data-bs-toggle="modal" data-bs-target="#exportModal"
+                                                ><img class="shadow" src="src/images/icons/export-icon.svg" width="25" alt=""></a>
+
+
+                                                <a href="#!" class="text-decoration-none me-1 me-md-2 me-lg-3"><img class="shadow"
+                                                                                                                    src="src/images/icons/duplicate-icon.svg" width="25" alt=""></a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item mb-2 border-0">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0 position-absolute start-0 timeline-card-img" style="top: 43px !important;">
+                                    <img src="./src/images/icons/unchecked-icon.svg" width="30" alt="">
+                                </div>
+                                <div class="ms-4 w-100 px-3">
+                                    <div class="row p-1 p-md-3 rounded rounded-3 timeline-card" style="background: rgba(255, 255, 255, 0.4);">
+                                        <div class="col-md-6 col-lg-8 border-bottom pb-2 border-bottom-2 mb-3 mb-md-0">
+                                            <div class="">
+                                                <p class="mb-1 text-dark fw-600 fw-bold-on-hover">Event Details Lorem ipsum dolor sit amet Event Details Lorem ipsum dolor sit amet</p>
+                                                <p class="mb-0 fs-14 text-gray-500  text-gray-400 font-change-color-on-hover">
+                                                    <img src="src/images/icons/cloudy-night-icon.svg" class="me-1" width="15"
+                                                         alt="">
+                                                    Day 12 (Night)
+                                                    <img src="src/images/icons/location-icon.svg" class="me-1" width="20"
+                                                         alt="">
+                                                    Florida,USA
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 align-self-md-end">
+                                            <div class="d-flex justify-content-md-end pb-2 pb-md-0">
+                                                <a href="#!" class="text-decoration-none me-1 me-md-2 me-lg-3"><img class="shadow"
+                                                                                                                    src="src/images/icons/edit-icon.svg" width="25" alt=""></a>
+                                                <a href="#!" class="text-decoration-none me-1 me-md-2 me-lg-3">
+                                                    <img class="shadow" src="src/images/icons/upload-icon.svg" width="25" alt=""></a>
+                                                <a href="#!" class="text-decoration-none me-1 me-md-2 me-lg-3">
+                                                    <img class="shadow" src="src/images/icons/save-icon.svg" width="25" alt=""></a>
+
+                                                <a href="#!" class="text-decoration-none me-1 me-md-2 me-lg-3">
+                                                    <img class="shadow" src="src/images/icons/trash-icon.svg" width="25" alt=""></a>
+
+                                                <a href="#!" class="text-decoration-none me-1 me-md-2 me-lg-3"
+                                                   data-bs-toggle="modal" data-bs-target="#exportModal"
+                                                ><img class="shadow" src="src/images/icons/export-icon.svg" width="25" alt=""></a>
+
+
+                                                <a href="#!" class="text-decoration-none me-1 me-md-2 me-lg-3"><img class="shadow"
+                                                                                                                    src="src/images/icons/duplicate-icon.svg" width="25" alt=""></a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item mb-2 border-0">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0 position-absolute start-0 timeline-card-img" style="top: 43px !important;">
+                                    <img src="./src/images/icons/unchecked-icon.svg" width="30" alt="">
+                                </div>
+                                <div class="ms-4 w-100 px-3">
+                                    <div class="row p-1 p-md-3 rounded rounded-3 timeline-card" style="background: rgba(255, 255, 255, 0.4);">
+                                        <div class="col-md-6 col-lg-8 border-bottom pb-2 border-bottom-2 mb-3 mb-md-0">
+                                            <div class="">
+                                                <p class="mb-1 text-dark fw-600 fw-bold-on-hover">Event Details Lorem ipsum dolor sit amet Event Details Lorem ipsum dolor sit amet</p>
+                                                <p class="mb-0 fs-14 text-gray-500  text-gray-400 font-change-color-on-hover">
+                                                    <img src="src/images/icons/cloudy-night-icon.svg" class="me-1" width="15"
+                                                         alt="">
+                                                    Day 12 (Night)
+                                                    <img src="src/images/icons/location-icon.svg" class="me-1" width="20"
+                                                         alt="">
+                                                    Florida,USA
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 align-self-md-end">
+                                            <div class="d-flex justify-content-md-end pb-2 pb-md-0">
+                                                <a href="#!" class="text-decoration-none me-1 me-md-2 me-lg-3"><img class="shadow"
+                                                                                                                    src="src/images/icons/edit-icon.svg" width="25" alt=""></a>
+                                                <a href="#!" class="text-decoration-none me-1 me-md-2 me-lg-3">
+                                                    <img class="shadow" src="src/images/icons/upload-icon.svg" width="25" alt=""></a>
+                                                <a href="#!" class="text-decoration-none me-1 me-md-2 me-lg-3">
+                                                    <img class="shadow" src="src/images/icons/save-icon.svg" width="25" alt=""></a>
+
+                                                <a href="#!" class="text-decoration-none me-1 me-md-2 me-lg-3">
+                                                    <img class="shadow" src="src/images/icons/trash-icon.svg" width="25" alt=""></a>
+
+                                                <a href="#!" class="text-decoration-none me-1 me-md-2 me-lg-3"
+                                                   data-bs-toggle="modal" data-bs-target="#exportModal"
+                                                ><img class="shadow" src="src/images/icons/export-icon.svg" width="25" alt=""></a>
+
+
+                                                <a href="#!" class="text-decoration-none me-1 me-md-2 me-lg-3"><img class="shadow"
+                                                                                                                    src="src/images/icons/duplicate-icon.svg" width="25" alt=""></a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Add event Modal -->
+<div class="modal fade" id="addEventModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content"
+             style="background-image: url('src/images/modals/modal-bg.png'); background-size: cover; background-repeat: no-repeat">
+            <div class="modal-header border-0 text-start me-auto">
+                <button type="button" class="btn bg-transparent border-0" data-bs-dismiss="modal"
+                        aria-label="Close">
+                    <img src="src/images/icons/back-arrow.svg" width="30" alt="">
+                </button>
+            </div>
+            <div class="modal-body pt-0">
+                <h3 class="text-center fw-600 mb-4 text-uppercase r-font">ADD Event</h3>
+
+                <!--  Header title-->
+                <div class="row header-row shadow-sm ">
+                    <div class="col-3 py-3 text-primary fw-500 fst-italic">Where</div>
+                    <div class="col-3 py-3 text-primary fw-500 fst-italic border-start border-end">When</div>
+                    <div class="col-6 py-3 text-primary fw-500 fst-italic">What Happened</div>
+                </div>
+
+                
+
+                <div class="row header-row  border-bottom ">
+                    <div class="col-3 text-primary fw-500 py-2 align-self-center">
+                        <div class="form-group">
+                            <select name="" class="form-select form-control bg-transparent border-0 " id="">
+                                <option value="">Choose</option>
+                                <option value="the_shire">The Shire</option>
+                                <option value="the_mount_door">The Mount Doom</option>
+                                <option value="legolas">Legolas</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-3 text-primary fw-500 border-start border-end py-2 align-self-center">
+                        <div class="form-group">
+                            <select name="" class="form-select form-control bg-transparent border-0 " >
+                                <option value="">Choose</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-6 fw-500 py-2 align-self-center">
+
+                        <input type="text" class="form-control bg-transparent border-0" placeholder="Enter text">
+                    </div>
+                </div>
+
+                <div class="row header-row  border-bottom ">
+                    <div class="col-3 text-primary fw-500 py-2 align-self-center">
+                        <div class="form-group">
+                            <select name="" class="form-select form-control bg-transparent border-0 " id="">
+                                <option value="">Choose</option>
+                                <option value="the_shire">The Shire</option>
+                                <option value="the_mount_door">The Mount Doom</option>
+                                <option value="legolas">Legolas</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-3 text-primary fw-500 border-start border-end py-2 align-self-center">
+                        <div class="form-group">
+                            <select name="" class="form-select form-control bg-transparent border-0 " >
+                                <option value="">Choose</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-6 fw-500 py-2 align-self-center">
+
+                        <input type="text" class="form-control bg-transparent border-0" placeholder="Enter text">
+                    </div>
+                </div>
+                <div class="row header-row  border-bottom ">
+                    <div class="col-3 text-primary fw-500 py-2 align-self-center">
+                        <div class="form-group">
+                            <select name="" class="form-select form-control bg-transparent border-0 " id="">
+                                <option value="">Choose</option>
+                                <option value="the_shire">The Shire</option>
+                                <option value="the_mount_door">The Mount Doom</option>
+                                <option value="legolas">Legolas</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-3 text-primary fw-500 border-start border-end py-2 align-self-center">
+                        <div class="form-group">
+                            <select name="" class="form-select form-control bg-transparent border-0 " >
+                                <option value="">Choose</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-6 fw-500 py-2 align-self-center">
+
+                        <input type="text" class="form-control bg-transparent border-0" placeholder="Enter text">
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Footer-->
+            <div class="modal-footer d-block border-0 pb-5 mt-5">
+                <div class="row">
+                    <div class="col-md-6 px-0 mb-2 mb-md-0">
+                        <button type="button" class="btn btn-primary r-font w-100 fs-20 py-3">ADD Event</button>
+                    </div>
+                    <div class="col-md-6 px-0">
+                        <button type="button" class="btn bg-white r-font text-primary fs-20 w-100 py-3 fw-700"
+                                data-bs-dismiss="modal">CANCEL
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="dist/app.js"></script>
+<script src="dist/bundle.js"></script>
+</body>
+</html>

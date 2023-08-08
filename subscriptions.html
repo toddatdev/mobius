@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="dist/app.css">
+    <title>Mobius | Subscription </title>
+</head>
+<body class="body-bg-img bg-c-img" style="background-image: url('src/images/bgbodyimg.png')">
+
+<div class="top-bar px-3 px-md-4 px-lg-5 bg-white h-155 mb-2 w-100 mb-md-0 d-flex align-items-center justify-content-center"
+     style="background: url(src/images/subscription/t-bg-img.png);background-repeat: no-repeat !important;background-size: cover !important; min-height: 345px !important;
+     background-color: transparent !important;box-shadow: none !important;
+">
+    <div class="row">
+        <div class="col-md-8 col-lg-5 mx-auto align-self-center w-100">
+            <div class="text-center">
+                <h2 class="black-font text-uppercase">Choose your plan</h2>
+                <p class="fs-14">
+                    14 days unlimited free trial, no contract or subscription is required
+                </p>
+                <div class="d-flex justify-content-center align-items-center my-3">
+                    <h4 class="mb-0 fs-18 r-font" id="monthly_title">Monthly</h4>
+                    <div class="form-check form-switch mx-2">
+                        <input class="form-check-input toggle-bar" name="subscription_toggle" value="yearly"
+                               type="checkbox" role="switch"
+                               id="subscription_toggle"/>
+                    </div>
+                    <h4 class="mb-0 fs-18 r-font text-gray-500" id="yearly_title">Yearly</h4>
+                    <p class="mb-0 text-primary fs-14 fw-bold ms-2">20% off</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="px-3 px-md-4 px-lg-5 pt-3 pb-5">
+
+    <div class="row" id="ShowPlusPlanRow">
+        <div class="col-md-6 col-lg-5 mb-3 mb-lg-0 mx-auto">
+            <div class="card  border-0  shadow py-3 text-white"
+                 style="background: url(src/images/subscription/bg-black-card.png);background-repeat: no-repeat !important;background-size: cover !important;
+                 backdrop-filter: blur(8px);
+                 background: linear-gradient(45deg, rgba(16, 24, 40, 0.90) 0%, rgba(71, 84, 103, 0.90) 100%);
+
+"
+            >
+                <h4 class="text-uppercase  r-font pt-2 px-3" style="color: #FEC84B"><a href="#!" id="backPlusPlanBtn" class="text-white">
+                    <img src="./src/images/icons/back-icon-white.svg" width="25" class="me-3" alt=""></a> Most popular</h4>
+                <div class="card-body py-3">
+                    <h5 class="px-md-3 px-lg-5 fw-600 fm-unset mb-4 ">Plus</h5>
+                    <div class="px-md-3 px-lg-5 mb-5 d-flex align-items-center" >
+                        <h1 class="fw-600 r-font"  style="font-size: 80px">$10</h1><span class="fw-400 ms-3 fs-18 fm-unset">/ month</span>
+                    </div>
+                    <div class="px-md-3 px-lg-4 mb-3 d-flex align-items-end " >
+                        <div class="w-100">
+                            <div class="py-2 row">
+                                <div class="mb-3 text-white col-md-6">
+                                    <img src="./src/images/subscription/game-icon.svg" width="30" class="me-2" alt="">
+                                    Availability of 2 Games
+                                </div>
+                                <div class="mb-3 text-white col-md-6">
+                                    <img src="./src/images/subscription/archive-icon.svg" width="30" class="me-2"
+                                         alt="">
+                                    Archiving Facility
+                                </div>
+                                <div class="mb-3 text-white col-md-6">
+                                    <img src="./src/images/subscription/export-icon.svg" width="30" class="me-2" alt="">
+                                    Game Exports
+                                </div>
+                                <div class="mb-3 text-white col-md-6">
+                                    <img src="./src/images/subscription/game-icon.svg" width="30" class="me-2" alt="">
+                                    Game Handouts
+                                </div>
+                                <div class="mb-3 text-white col-md-6">
+                                    <img src="./src/images/subscription/cloud-icon.svg" width="30" class="me-2" alt="">
+                                    1 GB Cloud Storage
+                                </div>
+
+
+                            </div>
+                            <div class="text-center">
+                                <a href="#!" class="btn btn-primary px-md-5 w-75 py-2 fs-16 fw-600 mt-2 mt-md-5 ">
+                                    Purchase</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" id="hideAllRows">
+        <div class="col-md-6 col-lg-4 mb-3 mb-lg-0 align-self-end mx-auto">
+            <div class="card transparent-card border-0  shadow py-3">
+                <div class="card-body py-3">
+                    <h5 class="text-center fw-600 fm-unset mb-4 ">Basic</h5>
+                    <div class="text-center" id="basic_plan">
+
+                    </div>
+                    <div class="px-md-3 px-lg-5 d-flex align-items-end " style="min-height: 430px">
+                        <div class="w-100">
+                            <ul class="list-group list-group-flush py-2">
+                                <li class="list-group-item mb-2 border-0">
+                                    <img src="./src/images/subscription/game-icon.svg" width="30" class="me-2" alt="">
+                                    Availability of 2 Games
+                                </li>
+                                <li class="list-group-item mb-2 border-0">
+                                    <img src="./src/images/subscription/export-icon.svg" width="30" class="me-2" alt="">
+                                    Game Exports
+                                </li>
+                                <li class="list-group-item mb-2 border-0">
+                                    <img src="./src/images/subscription/cloud-icon.svg" width="30" class="me-2" alt="">
+                                    1 GB Cloud Storage
+                                </li>
+                                <li class="list-group-item mb-2 border-0">
+                                    <img src="./src/images/subscription/archive-icon.svg" width="30" class="me-2"
+                                         alt="">
+                                    Archiving Facility
+                                </li>
+                            </ul>
+                            <div class="text-center">
+                                <a href="#!"
+                                   class="btn bg-white text-primary w-75 px-md-5 py-2 fs-16 fw-600 mt-2 mt-md-5 ">Get
+                                    Started</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-3 mb-lg-0 mx-auto">
+            <div class="card  border-0  shadow py-3 text-white"
+                 style="background: url(src/images/subscription/bg-black-card.png);background-repeat: no-repeat !important;background-size: cover !important;
+                 backdrop-filter: blur(8px);
+                 background: linear-gradient(45deg, rgba(16, 24, 40, 0.90) 0%, rgba(71, 84, 103, 0.90) 100%);
+
+"
+            >
+                <h5 class="text-uppercase text-center r-font pt-2" style="color: #FEC84B">Most popular</h5>
+                <div class="card-body py-3">
+                    <h5 class="text-center fw-600 fm-unset mb-4 ">Plus</h5>
+                    <div class="text-center" id="most_popular_plan">
+
+                    </div>
+                    <div class="px-md-3 px-lg-5 d-flex align-items-end " style="min-height: 450px">
+                        <div class="w-100">
+                            <ul class="list-group list-group-flush py-2">
+                                <li class="list-group-item mb-2 border-0 text-white">
+                                    <img src="./src/images/subscription/game-icon.svg" width="30" class="me-2" alt="">
+                                    Availability of 2 Games
+                                </li>
+                                <li class="list-group-item mb-2 border-0 text-white">
+                                    <img src="./src/images/subscription/export-icon.svg" width="30" class="me-2" alt="">
+                                    Game Exports
+                                </li>
+                                <li class="list-group-item mb-2 border-0 text-white">
+                                    <img src="./src/images/subscription/cloud-icon.svg" width="30" class="me-2" alt="">
+                                    1 GB Cloud Storage
+                                </li>
+                                <li class="list-group-item mb-2 border-0 text-white">
+                                    <img src="./src/images/subscription/archive-icon.svg" width="30" class="me-2"
+                                         alt="">
+                                    Archiving Facility
+                                </li>
+                                <li class="list-group-item mb-2 border-0 text-white">
+                                    <img src="./src/images/subscription/game-icon.svg" width="30" class="me-2" alt="">
+                                    Game Handouts
+                                </li>
+                            </ul>
+                            <div class="text-center">
+                                <a href="#!" class="btn btn-primary px-md-5 w-75 py-2 fs-16 fw-600 mt-2 mt-md-5 " id="getStartedPlusPlan">Get
+                                    Started</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-3 mb-lg-0 mx-auto align-self-end">
+            <div class="card transparent-card border-0  shadow py-3">
+                <div class="card-body py-3">
+                    <h5 class="text-center fw-600 fm-unset mb-4 ">Pro</h5>
+                    <div class="text-center" id="pro_plan">
+
+                    </div>
+                    <div class="px-md-3 px-lg-5 d-flex align-items-end " style="min-height: 430px">
+                        <div class="w-100">
+                            <ul class="list-group list-group-flush py-2">
+                                <li class="list-group-item mb-2 border-0">
+                                    <img src="./src/images/subscription/game-icon.svg" width="30" class="me-2" alt="">
+                                    Availability of 2 Games
+                                </li>
+                                <li class="list-group-item mb-2 border-0">
+                                    <img src="./src/images/subscription/export-icon.svg" width="30" class="me-2" alt="">
+                                    Game Exports
+                                </li>
+                                <li class="list-group-item mb-2 border-0">
+                                    <img src="./src/images/subscription/cloud-icon.svg" width="30" class="me-2" alt="">
+                                    1 GB Cloud Storage
+                                </li>
+                                <li class="list-group-item mb-2 border-0">
+                                    <img src="./src/images/subscription/archive-icon.svg" width="30" class="me-2"
+                                         alt="">
+                                    Archiving Facility
+                                </li>
+                                <li class="list-group-item mb-2 border-0">
+                                    <img src="./src/images/subscription/game-icon.svg" width="30" class="me-2" alt="">
+                                    Game Handouts
+                                </li>
+                                <li class="list-group-item mb-2 border-0">
+                                    <img src="./src/images/subscription/link-icon.svg" width="30" class="me-2" alt="">
+                                    Linked Games
+                                </li>
+                            </ul>
+                            <div class="text-center">
+                                <a href="#!"
+                                   class="btn bg-white text-primary w-75 px-md-5 py-2 fs-16 fw-600 mt-2 mt-md-5 ">Get
+                                    Started</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="dist/app.js"></script>
+<script src="dist/bundle.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+
+        $('#monthly_title').addClass("fw-600 ");
+        $('#basic_plan').append('<h1 class="fw-600" id="basic_plan_info">$5<span class="fw-400 ms-2 fs-14 fm-unset">/ month</span></h1>');
+        $('#most_popular_plan').append(' <h1 class="fw-600" id="most_popular_plan_info">$10<span class="fw-400 ms-2 fs-14 fm-unset">/ month</span></h1>');
+        $('#pro_plan').append('<h1 class="fw-600" id="pro_plan_info">$20<span class="fw-400 ms-2 fs-14 fm-unset">/ month</span></h1>');
+
+
+        $('input[name="subscription_toggle"]').on('change', function () {
+            $('#basic_plan_info').remove();
+            $('#most_popular_plan_info').remove();
+            $('#pro_plan_info').remove();
+            $('#monthly_title').removeClass("fw-600");
+            $('#yearly_title').removeClass("fw-600");
+            var is_yearly = $('input[name="subscription_toggle"]:checked').val();
+
+            if (is_yearly == 'yearly') {
+                $('#monthly_title').addClass("text-gray-500");
+                $('#yearly_title').removeClass("text-gray-500");
+                $('#yearly_title').addClass("text-dark fw-600");
+                $('#basic_plan').append('<h1 class="fw-600" id="basic_plan_info">$55<span class="fw-400 ms-2 fs-14 fm-unset">/ year</span></h1>');
+                $('#most_popular_plan').append(' <h1 class="fw-600" id="most_popular_plan_info">$99<span class="fw-400 ms-2 fs-14 fm-unset">/ year</span></h1>');
+                $('#pro_plan').append('<h1 class="fw-600" id="pro_plan_info">$199<span class="fw-400 ms-2 fs-14 fm-unset">/ year</span></h1>');
+            } else {
+                $('#yearly_title').addClass("text-gray-500");
+                $('#monthly_title').removeClass("text-gray-500");
+                $('#monthly_title').addClass("text-dark fw-600");
+                $('#basic_plan').append('<h1 class="fw-600" id="basic_plan_info">$5<span class="fw-400 ms-2 fs-14 fm-unset">/ month</span></h1>');
+                $('#most_popular_plan').append(' <h1 class="fw-600" id="most_popular_plan_info">$10<span class="fw-400 ms-2 fs-14 fm-unset">/ month</span></h1>');
+                $('#pro_plan').append('<h1 class="fw-600" id="pro_plan_info">$20<span class="fw-400 ms-2 fs-14 fm-unset">/ month</span></h1>');
+            }
+        });
+    });
+
+    $(document).ready(function() {
+
+        $('#ShowPlusPlanRow').hide();
+
+        $('#getStartedPlusPlan').click(function() {
+            $("#hideAllRows").hide(1000);
+            $("#ShowPlusPlanRow").show(1000);
+        });
+
+
+        $("#backPlusPlanBtn").click(function() {
+            $("#ShowPlusPlanRow").hide(1000);
+            $("#hideAllRows").show(1000);
+        });
+    });
+
+</script>
+
+</body>
+</html>

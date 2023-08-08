@@ -1,0 +1,2 @@
+git clone https://gitlab.com/devs3481918/mobius-prototype.git
+npx webpack --mode=development --watch
